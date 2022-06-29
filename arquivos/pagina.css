@@ -1,20 +1,115 @@
+.table{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
 body{
     height: 100vh;
     margin: 0;
-}
-#cont{
-    background: yellow;
-    margin-right: 20%;
-    margin-left: 20%;
-}
-.container{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-areas:
+    "espaco1 header header espaco2"
+    "espaco1 main main espaco2"
+    "espaco1 main main espaco2"
+    "espaco1 main main espaco2"
+    "espaco1 main main espaco2"
+    "espaco1 main main espaco2"
+    "espaco1 main main espaco2"
+    "espaco1 main main espaco2"
+    "espaco1 main main espaco2"
+    "espaco1 main main espaco2"
+    "espaco1 main main espaco2"
+    "espaco1 main main espaco2"
+    ;
 }
 header{
+    grid-area: header;
     background-color: red;
+    display: grid;
+    grid-template-areas:
+    "esp1"
+    "esp2"
+    "esp3";
 }
-main{
-    background: green;
+#esp1{
+    grid-area: esp1;
+}
+#esp2{
+    grid-area: esp2;
 }
 
+#cont{
+    grid-area: esp2;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: auto;
+    background: blue;
+}
+
+#divLogo{
+    display: flex;
+}
+#divButton{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.listMenu{
+    list-style: none;;
+}
+
+main{
+    grid-area: main;
+    background: green;
+    display: grid;
+    grid-template-areas:
+    "titulo"
+    "imagem"
+    "imagem"
+    "imagem"
+    "imagem"
+    "imagem"
+    "imagem"
+    "imagem"
+    "imagem"
+    "imagem";
+}
+#titulo{
+    grid-area: titulo;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 10vh;
+}
+#imagem{
+    grid-area: imagem;
+    background: rgb(218, 32, 141);
+    display: flex;
+    justify-content: space-between;
+    
+}
+#espImg1{
+    grid-area: espImg1;
+    background: green;
+    flex-grow: 2;
+}
+#espImg2{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+#espImg3{
+    background: red;
+    flex-grow: 2;
+}
+#espaco1{
+    grid-area: espaco1;
+    background: black;
+}
+#espaco2{
+    grid-area: espaco2;
+    background: rgb(194, 228, 0);
+}
