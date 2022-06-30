@@ -41,19 +41,25 @@ header{
 
 #cont{
     grid-area: esp2;
-    display: flex;
-    justify-content: space-between;
-    flex-basis: auto;
+    display: grid;
+    grid-template-areas:
+    "fig fig fig fig menu menu but but but";
     background: blue;
 }
 
 #divLogo{
+    grid-area: fig;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 #divButton{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+    grid-area: but;
+}
+
+#table1{
+    grid-area: menu;
 }
 .listMenu{
     list-style: none;;
@@ -78,10 +84,9 @@ main{
 #titulo{
     grid-area: titulo;
     background: blue;
-    display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 10vh;
+    font-size: 12vh;
 }
 #imagem{
     grid-area: imagem;
