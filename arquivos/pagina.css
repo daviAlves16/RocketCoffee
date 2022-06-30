@@ -1,9 +1,12 @@
-.table{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
+:root{
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+    --font: 'Manrope', sans-serif
 }
-
 body{
     height: 100vh;
     margin: 0;
@@ -22,10 +25,17 @@ body{
     "espaco1 main main espaco2"
     "espaco1 main main espaco2"
     ;
+    color: var(--text-color);
+    background-image: url('../assets/blur-1.png'), url('../assets/blur-2.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right top;
+    background-color: var(--backgrond);
+    font-family: var(--font);
+
 }
+
 header{
     grid-area: header;
-    background-color: red;
     display: grid;
     grid-template-areas:
     "esp1"
@@ -44,7 +54,6 @@ header{
     display: grid;
     grid-template-areas:
     "fig fig fig fig menu menu but but but";
-    background: blue;
 }
 
 #divLogo{
@@ -57,7 +66,18 @@ header{
 #divButton{
     grid-area: but;
 }
-
+#pegar{
+    background-color: transparent;
+    color: var(--text-color);
+    border: solid var(--button) 1px;
+    font-weight: 700;
+}
+.table{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: 400;
+}
 #table1{
     grid-area: menu;
 }
@@ -67,7 +87,6 @@ header{
 
 main{
     grid-area: main;
-    background: green;
     display: grid;
     grid-template-areas:
     "titulo"
@@ -83,21 +102,23 @@ main{
 }
 #titulo{
     grid-area: titulo;
-    background: blue;
     justify-content: center;
     text-align: center;
-    font-size: 12vh;
+    font-size: clamp(3rem, 10vw, 4rem); 
+    font-weight: 700;
+}
+#greatCo{
+    color: #000;
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
 }
 #imagem{
     grid-area: imagem;
-    background: rgb(218, 32, 141);
     display: flex;
     justify-content: space-between;
     
 }
 #espImg1{
     grid-area: espImg1;
-    background: green;
     flex-grow: 2;
 }
 #espImg2{
@@ -107,14 +128,11 @@ main{
     flex-basis: 50%;
 }
 #espImg3{
-    background: red;
     flex-grow: 2;
 }
 #espaco1{
     grid-area: espaco1;
-    background: black;
 }
 #espaco2{
     grid-area: espaco2;
-    background: rgb(194, 228, 0);
 }

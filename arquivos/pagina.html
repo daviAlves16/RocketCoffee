@@ -6,60 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RocketCoffee</title>
     <link rel="stylesheet" href="pagina.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet"> 
 </head>
-<body>
-    
-   <header id="header"> 
-    <div id="esp1"></div>    
-    <div id="cont" class="container">
-            <div style="background: rgb(6, 189, 189);" id="divLogo">
-                <img src="../assets/logo-desktop.svg" alt="" id="img2">
-            </div>
-            <ul class="table" style="background: pink; width: 100%;" id="table1">   
-                <li class="listMenu"><p>Home</p></li>
-                <li class="listMenu"><p>Menu</p></li>
-                <li class="listMenu"><p>Recompensas</p></li>
-                <li class="listMenu"><p>Gift Cards</p></li>
-                <li class="listMenu"><p>Lojas</p></li>
-            </ul>
-            
-            <div style="background: greenyellow; display: flex;" id="divButton">
-                <div style="flex-grow: 1;"></div>
-                <div style="flex-grow: 2;"></div>
+<body> 
+    <header id="header"> 
+        <div id="esp1"></div>    
+        <div id="cont" class="container">
+                <div id="divLogo">
+                    <img src="../assets/logo-desktop.svg" alt="" id="img2">
+                </div>
+                <ul class="table" id="table1">   
+                    <li class="listMenu"><p>Home</p></li>
+                    <li class="listMenu"><p>Menu</p></li>
+                    <li class="listMenu"><p>Recompensas</p></li>
+                    <li class="listMenu"><p>Gift Cards</p></li>
+                    <li class="listMenu"><p>Lojas</p></li>
+                </ul>
                 
-                <div style="flex-grow: 1; background: black; display: flex; align-items: center;">
-                    <div style="width: 100%;">
-                        <button id="pegar" style="width: 100%;">PEGAR MEU CAFÉ</button>
-                    </div>    
+                <div style="display: flex;" id="divButton">
+                    <div style="flex-grow: 1;"></div>
+                    <div style="flex-grow: 2;"></div>
+                    
+                    <div style="flex-grow: 1; display: flex; align-items: center;">
+                        <div style="width: 100%;">
+                            <button id="pegar" style="width: 100%; height: 5vh;">PEGAR MEU CAFÉ</button>
+                        </div>    
+                    </div>
                 </div>
             </div>
+            <div id="esp2"></div>
+    
+       </header>
+    
+    
+       <main id="main">
+      
+        <div id="titulo" style="display: flex;">
+            <div style="flex-grow: 1;"></div>
+            <div style="flex-grow: 1;">
+                <p style="margin: 0px;">Great Coffe</p>
+                <p style="margin: 0px;" id="greatCo">&lt;Great Code/&gt;</p>
+            </div>
+            <div style="flex-grow: 1;"></div>   
         </div>
-        <div id="esp2"></div>
-
-   </header>
-
-
-   <main id="main">
-  
-    <div id="titulo" style="display: flex;">
-        <div style="flex-grow: 1; background: red;"></div>
-        <div style="flex-grow: 1;">
-            <p style="margin: 0px;">Great Coffe</p>
-            <p style="margin: 0px;">Great Code</p>
-        </div>
-        <div style="flex-grow: 1; background: green;"></div>   
-    </div>
-
-       <div id="imagem">
-           <div id="espImg1"></div>
-           <div id="espImg2">
-               <img src="../assets/rocket-coffee.png" alt="" width="100%" height="100%">
+    
+           <div id="imagem">
+               <div id="espImg1"></div>
+               <div id="espImg2">
+                   <img src="../assets/rocket-coffee.png" alt="" width="100%" height="100%">
+               </div>
+               <div id="espImg3"></div>
            </div>
-           <div id="espImg3"></div>
-       </div>
-   </main>
-
-   <div id="espaco1"></div>
-   <div id="espaco2"></div>
+       </main>
+    
+       <div id="espaco1"></div>
+       <div id="espaco2"></div>
+    
 </body>
 </html>
