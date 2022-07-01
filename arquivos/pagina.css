@@ -46,7 +46,7 @@ header{
     grid-area: esp1;
 }
 #esp2{
-    grid-area: esp2;
+    grid-area: esp3;
 }
 
 #cont{
@@ -66,11 +66,22 @@ header{
 #divButton{
     grid-area: but;
 }
+a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+li:hover{
+    background: #8257E5;
+}
+
 #pegar{
     background-color: transparent;
     color: var(--text-color);
     border: solid var(--button) 1px;
     font-weight: 700;
+}
+#pegar:hover{
+    background: #8257E5;
 }
 .table{
     display: flex;
@@ -82,7 +93,7 @@ header{
     grid-area: menu;
 }
 .listMenu{
-    list-style: none;;
+    list-style: none;
 }
 
 main{
@@ -136,3 +147,21 @@ main{
 #espaco2{
     grid-area: espaco2;
 }
+li:hover{
+    background: #8257E5;
+}
+
+@media(max-width: 664px) {
+    #table1{
+        display: none;
+    }
+    #pegar{
+        display: none;
+    }
+    #icon{
+        display: flex;
+    }
+    #divLogo{
+        justify-content: left;
+    }
+}    
