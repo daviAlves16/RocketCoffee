@@ -10,6 +10,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="pagina.js"></script>
+
 </head>
 <body> 
     <header id="header"> 
@@ -21,23 +24,27 @@
                 </div>
 
                 <ul class="table" id="table1">   
-                    <li class="listMenu"><a href="#"><p>Home</p></a></li>
-                    <li class="listMenu"><a href="#"><p>Menu</p></a></li>
-                    <li class="listMenu"><a href="#"><p>Recompensas</p></a></li>
-                    <li class="listMenu"><a href="#"><p>Recompensas</p></a></li>
-                    <li class="listMenu"><a href="#"><p>Lojas</p></a></li>
-                   
+                    <li class="listMenu hov"><a href="#"><p>Home</p></a></li>
+                    <li class="listMenu hov"><a href="#"><p>Menu</p></a></li>
+                    <li class="listMenu hov"><a href="#"><p>Recompensas</p></a></li>
+                    <li class="listMenu hov"><a href="#"><p>Recompensas</p></a></li>
+                    <li class="listMenu hov"><a href="#"><p>Lojas</p></a></li> 
                 </ul>
                 
+
+
                 <div style="display: flex;" id="divButton">
                     <div style="flex-grow: 1;"></div>
-                    <div style="flex-grow: 2;" id="btmenu">
-                            <img src="../assets/menu-buguer-open.svg" alt="" width="30vw" class="none"> 
+                    <div style="flex-grow: 2;" id="btmenu" class="none">
+                        <a href="javascript:void(0);" onclick="myFunction()">
+                            <img src="../assets/menu-buguer-open.svg" alt="" width="30vw" class="none" id="logoAbrir">
+                            <img src="../assets/menu-buguer-close.svg" alt="" width="30vw" class="none2" id="logoFechar"> 
+                        </a>
                     </div>
                     
                     <div style="flex-grow: 1; display: flex; align-items: center;" id="divPegar">
                         <div style="width: 100%;">
-                            <button id="pegar" style="width: 100%; height: 5vh;">PEGAR MEU CAFÉ</button>
+                            <button id="pegar" style="width: 80%; height: 5vh;">PEGAR MEU CAFÉ</button>
                         </div>    
                     </div>
                 </div>
@@ -48,6 +55,18 @@
     
     
        <main id="main">
+
+        <div id="myLinks">
+           
+            <ul style="padding-left: 0px; margin-top: 0px;">
+                <li class="listMenu"><a href="#">Home</a></li>
+                <li class="listMenu"><a href="#">Menu</a></li>
+                <li class="listMenu"><a href="#">Recompensas</a></li>
+                <li class="listMenu"><a href="#">Gift Cards</a></li>
+                <li class="listMenu"><a href="#">Lojas</a></li> 
+            </ul>
+        </div>
+
         <div id="titulo">
             <div style="flex-grow: 1;"></div>
             <div style="flex-grow: 1;">

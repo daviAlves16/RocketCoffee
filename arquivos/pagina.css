@@ -28,6 +28,7 @@ body{
     color: var(--text-color);
     background-image: url('../assets/blur-1.png'), url('../assets/blur-2.png');
     background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed;
     background-position: left bottom, right top;
     background-color: var(--backgrond);
     font-family: var(--font);
@@ -69,9 +70,6 @@ header{
 a{
     color: var(--text-color);
     text-decoration: none;
-}
-li:hover{
-    background: #8257E5;
 }
 
 #pegar{
@@ -148,7 +146,7 @@ main{
 #espaco2{
     grid-area: espaco2;
 }
-li:hover{
+.hov:hover{
     background: #8257E5;
 }
 
@@ -159,6 +157,9 @@ li:hover{
     display: block;
 }
 #textCafe{
+    display: none;
+}
+#myLinks{
     display: none;
 }
 
@@ -173,21 +174,34 @@ li:hover{
     header{
         margin-top: 2vw;
         border-bottom: 0.1px solid var(--border-menu-mobile);
+        padding-top: 5vw;
+        padding-bottom: 5vw;
     }
     main{
         grid-template-areas:
+        "myLinks"
         "textCafe"
         "botao"
         "titulo"
-        "imagem"
-        "imagem"
-        "imagem"
-        "imagem"
-        "imagem"
-        "imagem"
-        "imagem"
-        "imagem"
         "imagem";
+    }
+    #myLinks{
+        margin-top: 0px;
+        grid-area: myLinks;
+        position: absolute;
+        background: #000;
+        width: 100%;
+        height: 100%;
+    }
+    .listMenu{
+        list-style: none;
+        border-bottom: 1px solid var(--border-menu-mobile);
+        padding-left: 5vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+    .listMenu:hover{
+        border-left: 5px solid var(--button);
     }
     #table1{
         display: none;
