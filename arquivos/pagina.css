@@ -113,6 +113,7 @@ main{
 }
 #titulo{
     grid-area: titulo;
+    display: flex;
     justify-content: center;
     text-align: center;
     font-size: clamp(3rem, 10vw, 4rem); 
@@ -157,8 +158,11 @@ li:hover{
 .none2{
     display: block;
 }
+#textCafe{
+    display: none;
+}
 
-@media(max-width: 664px) {
+@media(max-width: 554px) {
     
     body{
         background-image: url('../assets/blur-mobile.png');
@@ -169,6 +173,21 @@ li:hover{
     header{
         margin-top: 2vw;
         border-bottom: 0.1px solid var(--border-menu-mobile);
+    }
+    main{
+        grid-template-areas:
+        "textCafe"
+        "botao"
+        "titulo"
+        "imagem"
+        "imagem"
+        "imagem"
+        "imagem"
+        "imagem"
+        "imagem"
+        "imagem"
+        "imagem"
+        "imagem";
     }
     #table1{
         display: none;
@@ -192,5 +211,32 @@ li:hover{
     #btmenu{
         display: flex;
         justify-content: right;
+    }
+    #textCafe{
+        grid-area: textCafe;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: clamp(1.5rem, 7vw, 3rem); 
+        font-weight: 400;
+        margin-top: 20vw;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    #botao{
+        grid-area: botao;
+        padding-left: 28%;
+        padding-right: 28%;
+        margin-top: 20vw;
+    }
+    #pegar2{
+        background-color: transparent;
+        color: var(--text-color);
+        border: solid var(--button) 1px;
+        font-weight: 700;
+    }
+    #titulo{
+        font-size: clamp(2rem, 12vw, 3rem);
+        margin-top: 20vw; 
     }
 }    
